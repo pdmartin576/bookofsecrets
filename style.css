@@ -1,9 +1,23 @@
+* {margin: 0 auto;padding: 0;box-sizing: border-box;}
+
 body {
     font-family: Arial, sans-serif;
 }
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.subtitle {
+    padding-bottom: 1em;
+}
 .quiz-container {
-    width: 300px;
-    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.quiz-container button {
+    display: flex;
 }
 .question {
     margin-bottom: 20px;
@@ -11,4 +25,9 @@ body {
 .result {
     display: none;
     margin-top: 20px;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
 }
