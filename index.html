@@ -3,28 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Choice Quiz</title>
+    <title>Book of Secrets Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="quiz-container">
         <div id="quiz">
             <div class="question" data-points="[[1,0,1,1,0,0],[0,1,0,0,1,1]]">
-                <p>What's more important to you?</p>
+                <p>1. What's more important to you?</p>
                 <input type="radio" name="q1" value="0"> Showing off my skills.<br>
                 <input type="radio" name="q1" value="1"> Being part of the winning team.<br>
             </div>
             <div class="question" data-points="[[1,0,0,0,0,1],[0,0,1,0,1,0],[0,1,0,1,0,0]]">
-                <p>What is your favorite time of day?</p>
+                <p>2. What is your favorite time of day?</p>
                 <input type="radio" name="q2" value="0"> Morning<br>
                 <input type="radio" name="q2" value="1"> Noon<br>
                 <input type="radio" name="q2" value="2"> Night<br>
             </div>
             <div class="question" data-points="[[1,0,0,1,0,0],[0,1,0,0,1,0],[0,0,1,0,0,1]]">
-                <p>What's your favorite way to do a project?</p>
+                <p>3. What's your favorite way to do a project?</p>
                 <input type="radio" name="q3" value="0"> Alone<br>
                 <input type="radio" name="q3" value="1"> In a group<br>
                 <input type="radio" name="q3" value="2"> With a partner<br>
+            </div>
+            <div class="question" data-points="[[0,0,1,1,0,0],[1,0,0,0,1,0],[0,1,0,0,0,1]]">
+                <p>4. The most important character in a story is:</p>
+                <input type="radio" name="q4" value="0"> The hero<br>
+                <input type="radio" name="q4" value="1"> The secondary cast<br>
+                <input type="radio" name="q4" value="2"> The one that queer folks claim<br>
+            </div>
+            <div class="question" data-points="[[1,1,0,0,0,0],[1,0,1,0,0,0],[0,1,1,0,0,1]]">
+                <p>5. I consider myself…</p>
+                <input type="radio" name="q5" value="0"> ...an introvert.<br>
+                <input type="radio" name="q5" value="1"> ...an extrovert.<br>
+                <input type="radio" name="q5" value="2"> ...opposed to two-factor personality assessments.<br>
+            </div>
+            <div class="question" data-points="[[0,0,0,1,0,1],[0,0,0,1,1,0],[0,0,0,0,1,1]]">
+                <p>6. When reading a book or watching a movie, what is your favorite part?</p>
+                <input type="radio" name="q6" value="0"> The character arcs<br>
+                <input type="radio" name="q6" value="1"> The sudden twist<br>
+                <input type="radio" name="q6" value="2"> The core themes that drive the narrative<br>
+            </div>
+            <div class="question" data-points="[[0,1,0,0,0,0],[1,0,0,0,0,0],[0,0,0,1,0,0],[0,0,1,0,0,0],[0,0,0,0,0,1],[0,0,0,0,1,0]]">
+                <p>7. Which of these is the most powerful force of nature?</p>
+                <input type="radio" name="q7" value="0"> Blizzard<br>
+                <input type="radio" name="q7" value="1"> Hurricane<br>
+                <input type="radio" name="q7" value="2"> Plague<br>
+                <input type="radio" name="q7" value="3"> Volcano<br>
+                <input type="radio" name="q7" value="4"> Flood<br>
+                <input type="radio" name="q7" value="5"> Earthquake<br>
+            </div>
+            <div class="question" data-points="[[0,0,0,1,0,0],[0,0,0,0,0,1],[0,0,1,0,0,0],[1,0,0,0,0,0],[0,0,0,0,1,0],[0,1,0,0,0,0]]">
+                <p>8. Of these beasts, which is your favorite?</p>
+                <input type="radio" name="q8" value="0"> Snake<br>
+                <input type="radio" name="q8" value="1"> Horse<br>
+                <input type="radio" name="q8" value="2"> Eagle<br>
+                <input type="radio" name="q8" value="3"> Shark<br>
+                <input type="radio" name="q8" value="4"> Crab<br>
+                <input type="radio" name="q8" value="5"> Bear<br>
+            </div>
+            <div class="question" data-points="[[0,0,0,0,0,1],[0,0,1,0,0,0],[0,0,0,0,1,0],[0,1,0,0,0,0],[1,0,0,0,0,0],[0,0,0,1,0,0]]">
+                <p>9. What's your favorite season?</p>
+                <input type="radio" name="q9" value="0"> Spring<br>
+                <input type="radio" name="q9" value="1"> Summer<br>
+                <input type="radio" name="q9" value="2"> Fall<br>
+                <input type="radio" name="q9" value="3"> Winter<br>
+                <input type="radio" name="q9" value="4"> Anything Warm<br>
+                <input type="radio" name="q9" value="5"> Anything Cold<br>
+            </div>
+            <div class="question" data-points="[[1,0,0,0,0,0],[0,1,0,0,0,0],[0,0,1,0,0,0],[0,0,0,1,0,0],[0,0,0,0,1,0],[0,0,0,0,0,1]]">
+                <p>10. Which best describes you?</p>
+                <input type="radio" name="q10" value="0"> I love to learn new things.<br>
+                <input type="radio" name="q10" value="1"> I will get over anything.<br>
+                <input type="radio" name="q10" value="2"> I&#39;m a bit of an empath :3<br>
+                <input type="radio" name="q10" value="3"> I love a friendly wager.<br>
+                <input type="radio" name="q10" value="4"> I maintain a schedule.<br>
+                <input type="radio" name="q10" value="5"> I'm a great listener.<br>
             </div>
             <button onclick="submitQuiz()">Submit</button>
         </div>
