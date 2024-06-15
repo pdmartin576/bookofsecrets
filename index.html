@@ -9,28 +9,61 @@
 <body>
     <div class="quiz-container">
         <div id="quiz">
-            <div class="question" data-points="[[1,1,0,0,0,0],[0,0,1,1,0,0],[0,0,0,0,1,1]]">
-                <p>Question 1: Which option do you choose?</p>
-                <input type="radio" name="q1" value="0"> Option A<br>
-                <input type="radio" name="q1" value="1"> Option B<br>
-                <input type="radio" name="q1" value="2"> Option C<br>
+            <div class="question" data-points="[[1,0,1,1,0,0],[0,1,0,0,1,1]]">
+                <p>What's more important to you?</p>
+                <input type="radio" name="q1" value="0"> Showing off my skills.<br>
+                <input type="radio" name="q1" value="1"> Being part of the winning team.<br>
             </div>
-            <div class="question" data-points="[[0,1,1,0,0,0],[0,0,0,1,1,0],[1,0,0,0,0,1]]">
-                <p>Question 2: Which option do you prefer?</p>
-                <input type="radio" name="q2" value="0"> Option A<br>
-                <input type="radio" name="q2" value="1"> Option B<br>
-                <input type="radio" name="q2" value="2"> Option C<br>
+            <div class="question" data-points="[[1,0,0,0,0,1],[0,0,1,0,1,0],[0,1,0,1,0,0]]">
+                <p>What is your favorite time of day?</p>
+                <input type="radio" name="q2" value="0"> Morning<br>
+                <input type="radio" name="q2" value="1"> Noon<br>
+                <input type="radio" name="q2" value="2"> Night<br>
             </div>
-            <div class="question" data-points="[[0,1,0,0,0,1],[1,0,0,1,0,0],[0,1,0,0,1,0]]">
-                <p>Question 3: Which option do you like?</p>
-                <input type="radio" name="q3" value="0"> Option A<br>
-                <input type="radio" name="q3" value="1"> Option B<br>
-                <input type="radio" name="q3" value="2"> Option C<br>
+            <div class="question" data-points="[[1,0,0,1,0,0],[0,1,0,0,1,0],[0,0,1,0,0,1]]">
+                <p>What's your favorite way to do a project?</p>
+                <input type="radio" name="q3" value="0"> Alone<br>
+                <input type="radio" name="q3" value="1"> In a group<br>
+                <input type="radio" name="q3" value="2"> With a partner<br>
             </div>
             <button onclick="submitQuiz()">Submit</button>
         </div>
         <div id="result" class="result">
             <p id="resultText"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Storm</td>
+                        <td id="stormScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>Ice</td>
+                        <td id="iceScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>Fire</td>
+                        <td id="fireScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>Death</td>
+                        <td id="deathScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>Myth</td>
+                        <td id="mythScore">0</td>
+                    </tr>
+                    <tr>
+                        <td>Life</td>
+                        <td id="lifeScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
             <a href="javascript: location.reload();">reload this page</a>
         </div>
     </div>
