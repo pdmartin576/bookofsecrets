@@ -22,6 +22,7 @@ body {
 }
 .question {
     margin-bottom: 20px;
+    text-align: left;
 }
 .result {
     display: none;
