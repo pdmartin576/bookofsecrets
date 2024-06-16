@@ -77,18 +77,22 @@
                 <input type="radio" name="q9" value="5"> Anything Cold<br>
             </div>
             <div class="question" data-points="[[1,0,0,0,0,0],[0,1,0,0,0,0],[0,0,1,0,0,0],[0,0,0,1,0,0],[0,0,0,0,1,0],[0,0,0,0,0,1]]">
-                <p>10. Which best describes you?</p>
-                <input type="radio" name="q10" value="0"> I love to learn new things.<br>
-                <input type="radio" name="q10" value="1"> I will get over anything.<br>
-                <input type="radio" name="q10" value="2"> I&#39;m a bit of an empath :3<br>
-                <input type="radio" name="q10" value="3"> I love a friendly wager.<br>
-                <input type="radio" name="q10" value="4"> I maintain a schedule.<br>
+                <p>10. Which statement best describes you?</p>
+                <input type="radio" name="q10" value="0"> I will try anything once.<br>
+                <input type="radio" name="q10" value="1"> I am no stranger to stress.<br>
+                <input type="radio" name="q10" value="2"> I am the life of the party.<br>
+                <input type="radio" name="q10" value="3"> I will not lose.<br>
+                <input type="radio" name="q10" value="4"> I learn something new every day.<br>
                 <input type="radio" name="q10" value="5"> I'm a great listener.<br>
             </div>
             <button onclick="submitQuiz()">Submit</button>
         </div>
         <div id="result" class="result">
             <p id="resultText"></p>
+            <em><strong>
+                <p id="resultMotto"></p>
+            </strong></em>
+            <p id="resultBlurb"></p>
             <table>
                 <thead>
                     <tr>
@@ -123,7 +127,7 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="javascript: location.reload();">reload this page</a>
+            <a class="reload-btn" href="javascript: location.reload();">reload this page</a>
         </div>
     </div>
 </body>
