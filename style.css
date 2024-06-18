@@ -8,14 +8,15 @@ body {
     flex-direction: column;
     padding-bottom: 1em;
 }
-.subtitle {
-    padding-bottom: 1em;
-}
 .quiz-container {
     max-width: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+.instructions {
+    padding-bottom: 1em;
 }
 .quiz-container button {
     display: flex;

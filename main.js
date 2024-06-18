@@ -58,7 +58,7 @@ function submitQuiz() {
     document.getElementById('quiz').style.display = 'none';
     document.getElementById('result').style.display = 'flex';
     document.getElementById('result').style.flexDirection = 'column';
-    document.getElementById('resultText').innerText = `You belong to the School of ${groupName}.`;
+    document.getElementById('resultText').innerText = `Your best fit is the School of ${groupName}.`;
     document.getElementById('resultMotto').innerText = `${groupMotto}`;
     document.getElementById('resultBlurb').innerHTML = `${groupBlurb}`;
     // Update the scores in the table
